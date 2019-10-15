@@ -1,0 +1,105 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #E3CBD4;
+        }
+        
+        .main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            margin: 50px 0px 30px 0px;
+            text-align: center;
+            font-size: 40px;
+            color: #E3B1AD;
+        }
+        
+        header p {
+            font-size: 20px;
+            color: #E3B1AD;
+        }
+        
+        .claps {
+            width: 100%;
+            display: flex
+        }
+        
+        .claps>div {
+            height: 100px;
+            width: 100px;
+            flex: 1;
+        }
+        
+        .clap1 {
+            background-color: #2CCAFF;
+        }
+        
+        .clap2 {
+            background-color: #FF6682;
+        }
+        
+        .clap3 {
+            background-color: #AB80FF;
+        }
+        
+        .clap4 {
+            background-color: #83E88F;
+        }
+        
+        .clap5 {
+            background-color: #FFF585;
+        }
+        
+        .clap6 {
+            background-color: #FF7C6B;
+        }
+        
+        @keyframes jump {
+            0% {
+                bottom: 0%;
+                left: 20%;
+            }
+            50% {
+                bottom: 50%;
+                left: 50%;
+            }
+            100% {
+                bottom: 0%;
+                left: 80%;
+            }
+        }
+        
+        .details>div {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            bottom: 0%;
+            z-index: -1;
+        }
+        
+        @media screen and (max-width:600px) {
+            header h1 {
+                margin: 50px 0px 30px 0px;
+                text-align: center;
+                font-size: 30px;
+            }
+            header p {
+                font-size: 12px;
+            }
+            .claps>div {
+                height: 60px;
+                width: 60px;
+                flex: 1;
+            }
+        }
